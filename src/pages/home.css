@@ -1,0 +1,358 @@
+.home {
+  width: 100%;
+}
+.homeTop {
+  padding-top: 30px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#eee5f4, rgb(255, 255, 255));
+  overflow: hidden;
+}
+.homeTopImg {
+  object-fit: cover;
+  height: 750px;
+
+  position: absolute;
+  width: 100%;
+}
+.homeTopText {
+}
+
+.homeTopContent {
+  width: 100%;
+  height: 750px;
+  margin: auto;
+
+  overflow: hidden;
+  display: flex;
+}
+.homeTopContentLeft {
+  flex: 1;
+  width: 50%;
+  padding: 30px;
+  align-items: center;
+  font-family: "Assistant", sans-serif;
+  justify-content: center;
+}
+
+.homeTopContentleftHeading {
+  font-size: 70px;
+  font-weight: bold;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  color: #2a3939;
+}
+.homeTopContentleftHeading2 {
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  margin-top: 10px;
+  font-size: 30px;
+
+  color: #2a3939;
+}
+
+.homeTopContentleftList {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .homeTopContentleftListValue {
+  animation: 2s ease-out 0s 1 slideInFromLeft;
+  border: 1.2px solid #6b759f;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.9s;
+  color: #6b759f;
+  margin: 10px;
+  border-radius: 5px;
+}
+.homeTopContentleftListValue:hover {
+  border: 1px solid #6b759f;
+  background-color: #6b759f;
+  color: white;
+} */
+
+/* <button class="button-33" role="button">Button 33</button> */
+
+/* CSS */
+.homeTopContentleftListValue {
+  background-color: #fbc2f0;
+  border-radius: 100px;
+  box-shadow: rgba(187, 44, 168, 0.2) 0 -25px 18px -14px inset,
+    rgba(187, 44, 168, 0.15) 0 1px 2px, rgba(187, 44, 168, 0.15) 0 2px 4px,
+    rgba(187, 44, 168, 0.15) 0 4px 8px, rgba(187, 44, 168, 0.15) 0 8px 16px,
+    rgba(187, 44, 168, 0.15) 0 16px 32px;
+  color: rgb(187, 0, 187);
+  cursor: pointer;
+  margin: 10px;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.homeTopContentleftHeading {
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: url("https://i.ibb.co/vV9qdjh/DSCFk2df506.jpg");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+.homeTopContentleftListValue:hover {
+  box-shadow: rgba(187, 44, 168, 0.35) 0 -25px 18px -14px inset,
+    rgba(187, 44, 168, 0.25) 0 1px 2px, rgba(187, 44, 168, 0.25) 0 2px 4px,
+    rgba(187, 44, 168, 0.25) 0 4px 8px, rgba(187, 44, 168, 0.25) 0 8px 16px,
+    rgba(187, 44, 168, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.homeTopContentRight {
+  flex: 1;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin-left: 100px;
+  display: flex;
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/012/174/001/non_2x/pink-transparent-paint-splash-free-png.png"); */
+}
+.homeTopContentRightImg {
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+
+  justify-content: center;
+  object-fit: cover;
+  filter: drop-shadow(0 100px 80px rgb(0 0 0 / 0.07))
+    drop-shadow(0 42px 33px rgb(0 0 0 / 0.05))
+    drop-shadow(0 22px 18px rgb(0 0 0 / 0.04))
+    drop-shadow(0 13px 10px rgb(0 0 0 / 0.035))
+    drop-shadow(0 7px 5px rgb(0 0 0 / 0.03))
+    drop-shadow(0 3px 2px rgb(0 0 0 / 0.02));
+  animation: 0.5s ease-out 0s 1 slideInFromRigth;
+  /* animation: slideImg 10s forwards infinite; */
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRigth {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideImg {
+  0% {
+    background-color: #387780;
+    content: url("https://i.ibb.co/DRvtYRR/Untiftled.png");
+  }
+
+  33% {
+    background-color: #387780;
+    content: url("https://i.ibb.co/bXg7vkC/Whats-App-Image-2023-06-12-at-23-20-12.jpg");
+  }
+  66% {
+    content: url("https://i.ibb.co/M1N0R7n/DSCF22e14.jpg");
+    background-color: #588b8b;
+  }
+  100% {
+    content: url("https://i.ibb.co/vV9qdjh/DSCFk2df506.jpg");
+    background-color: #387780;
+  }
+}
+
+.gallery {
+  --g: 8px; /* the gap */
+  --s: 400px; /* the size */
+
+  display: grid;
+  border-radius: 50%;
+}
+.gallery > img {
+  grid-area: 1/1;
+  width: 400px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translate(var(--_x, 0), var(--_y, 0));
+  cursor: pointer;
+  z-index: 0;
+  transition: 0.3s, z-index 0s 0.3s;
+}
+.gallery img:hover {
+  --_i: 1;
+  z-index: 1;
+  transition: transform 0.2s, clip-path 0.3s 0.2s, z-index 0s;
+}
+.gallery:hover img {
+  transform: translate(0, 0);
+}
+.gallery > img:nth-child(1) {
+  clip-path: polygon(
+    50% 50%,
+    calc(50% * var(--_i, 0)) calc(120% * var(--_i, 0)),
+    0 calc(100% * var(--_i, 0)),
+    0 0,
+    100% 0,
+    100% calc(100% * var(--_i, 0)),
+    calc(100% - 50% * var(--_i, 0)) calc(120% * var(--_i, 0))
+  );
+  --_y: calc(-1 * var(--g));
+}
+.gallery > img:nth-child(2) {
+  clip-path: polygon(
+    50% 50%,
+    calc(100% - 120% * var(--_i, 0)) calc(50% * var(--_i, 0)),
+    calc(100% - 100% * var(--_i, 0)) 0,
+    100% 0,
+    100% 100%,
+    calc(100% - 100% * var(--_i, 0)) 100%,
+    calc(100% - 120% * var(--_i, 0)) calc(100% - 50% * var(--_i, 0))
+  );
+  --_x: var(--g);
+}
+.gallery > img:nth-child(3) {
+  clip-path: polygon(
+    50% 50%,
+    calc(100% - 50% * var(--_i, 0)) calc(100% - 120% * var(--_i, 0)),
+    100% calc(100% - 120% * var(--_i, 0)),
+    100% 100%,
+    0 100%,
+    0 calc(100% - 100% * var(--_i, 0)),
+    calc(50% * var(--_i, 0)) calc(100% - 120% * var(--_i, 0))
+  );
+  --_y: var(--g);
+}
+.gallery > img:nth-child(4) {
+  clip-path: polygon(
+    50% 50%,
+    calc(120% * var(--_i, 0)) calc(50% * var(--_i, 0)),
+    calc(100% * var(--_i, 0)) 0,
+    0 0,
+    0 100%,
+    calc(100% * var(--_i, 0)) 100%,
+    calc(120% * var(--_i, 0)) calc(100% - 50% * var(--_i, 0))
+  );
+  --_x: calc(-1 * var(--g));
+}
+
+.homeMid {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.homeMidRight {
+  flex: 1;
+}
+.homeMidimg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: 50;
+  /* background: #000000; */
+  /* background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.111) 75%,
+    rgba(0, 0, 0, 0.075) 80%,
+    rgba(0, 0, 0, 0.248) 95%,
+    rgba(0, 0, 0, 0.108) 100%
+  ); */
+}
+.text {
+  font-family: "Assistant";
+  font-size: 100px;
+  display: flex;
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+}
+.text .wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.text .wrapper .letter {
+  transition: ease-out 1s;
+  transform: translateY(40%);
+}
+.text .wrapper .shadow {
+  transform: scale(1, -1);
+  color: transparent;
+  transition: ease-in 5s, ease-out 5s;
+}
+.text .wrapper:hover .letter {
+  transform: translateY(-200%);
+}
+.text .wrapper:hover .shadow {
+  opacity: 0;
+  transform: translateY(200%);
+}
+.letter {
+  color: #ffffff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.homeTopContent2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 50px;
+  height: 100vh;
+  justify-content: center;
+}
+.homeTopContent2Head {
+  font-family: "Assistant", sans-serif;
+  margin-left: 60px;
+  /* color: #262028b6; */
+  font-size: 60px;
+  font-weight: bold;
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: url("https://i.ibb.co/vV9qdjh/DSCFk2df506.jpg");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}

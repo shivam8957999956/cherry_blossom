@@ -1,0 +1,50 @@
+.topbar {
+  position: sticky;
+  top: 0;
+
+  background-color: #eee5f430;
+  /* background-color: transparent; */
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  padding-left: 10px;
+}
+
+.toplLeft {
+  flex: 2;
+}
+.Logo {
+  font-family: "Assistant";
+  font-weight: bold;
+  color: #191b36;
+  font-size: 25px;
+}
+.dot {
+  color: #ffa3a3;
+  font-size: 30px;
+}
+.topcenter {
+  flex: 7;
+}
+.topList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.topListItem {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  color: #182d5e;
+  border-bottom: 2px solid transparent;
+  margin-left: 10px;
+  padding: 20px 20px;
+  font-family: "Rubik", sans-serif;
+  transition: border-bottom 0.5s ease;
+}
+.topListItem:hover {
+  border-bottom: 2px solid #182d5e;
+}

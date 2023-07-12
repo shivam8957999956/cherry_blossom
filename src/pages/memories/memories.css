@@ -1,0 +1,272 @@
+.memories {
+  font-family: "Assistant";
+  display: flex;
+  flex-direction: column;
+}
+.h2 {
+  position: relative;
+  font-size: 14vw;
+
+  color: #383d52;
+  -webkit-text-stroke: 0vw #383d52;
+  text-transform: uppercase;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #56eeffa3;
+  -webkit-text-stroke: 0vw #56eeffa3;
+  border-right: 2px solid #56eeffa3;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+.memoriesTop {
+  display: flex;
+
+  height: 700px;
+  flex-direction: row;
+  padding: 10px;
+}
+.memoriesTopLeft {
+  flex: 1;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.memoriesTopRight {
+  flex: 1;
+  height: 660px;
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+.memoriesTopRightImg {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  position: absolute;
+}
+.memoriesTopRightMain {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  transition: 0.6s;
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.207);
+}
+.memoriesTopRightMainHead {
+  font-size: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+.memoriesTopRightMain:hover {
+  background-color: rgba(0, 0, 0, 0.427);
+}
+.memoriesTopLeftUp {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+}
+.memoriesTopLeftUpImg {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.memoriesTopLeftUpMain {
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+
+  transition: 0.6s;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgba(32, 32, 32, 0.227);
+  position: relative;
+}
+.memoriesTopLeftUpMainHead {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+.memoriesTopLeftUpMain:hover {
+  background-color: rgba(0, 0, 0, 0.444);
+}
+.memoriesTopLeftDown {
+  height: 250px;
+  margin-top: 10px;
+
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+}
+.memoriesTopLeftDownLeft {
+  width: 50%;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+}
+.memoriesTopLeftDownLeftImg {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.memoriesTopLeftDownLeftMain {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.585);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.6s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memoriesTopLeftDownLeftMainHead {
+  color: white;
+  font-size: 30px;
+
+  font-weight: bold;
+}
+
+.memoriesTopLeftDownLeftMain:hover {
+  opacity: 1;
+}
+.memoriesTopLeftDownRight {
+  width: 50%;
+  /* margin-right: 10px; */
+  position: relative;
+  display: flex;
+}
+.memoriesTopLeftDownRightImg {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.memoriesTopLeftDownRightMain {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.585);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.6s;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memoriesTopLeftDownRightMainHead {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.memoriesTopLeftDownRightMain:hover {
+  opacity: 1;
+}
+.memoriesMid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+.memoriesMid1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.memoriesMid1Content {
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 400px;
+  margin: 0px 30px;
+  transition: 1s;
+  justify-content: center;
+}
+.memoriesMid1ContentMain {
+  position: absolute;
+  display: flex;
+  padding: 5px;
+  align-items: flex-end;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  justify-content: center;
+  transition: 1s;
+  filter: drop-shadow(0 100px 80px rgb(0 0 0 / 0.07))
+    drop-shadow(0 42px 33px rgb(0 0 0 / 0.05))
+    drop-shadow(0 22px 18px rgb(0 0 0 / 0.04))
+    drop-shadow(0 13px 10px rgb(0 0 0 / 0.035))
+    drop-shadow(0 7px 5px rgb(0 0 0 / 0.03))
+    drop-shadow(0 3px 2px rgb(0 0 0 / 0.02));
+}
+.memoriesMid1Content:hover .memoriesMid1ContentMain {
+  opacity: 1;
+}
+.memoriesMid1Content:hover .memoriesMid1ContentImg {
+  filter: drop-shadow(0 100px 80px rgb(0 0 0 / 0.07))
+    drop-shadow(0 42px 33px rgb(0 0 0 / 0.05))
+    drop-shadow(0 22px 18px rgb(0 0 0 / 0.04))
+    drop-shadow(0 13px 10px rgb(0 0 0 / 0.035))
+    drop-shadow(0 7px 5px rgb(0 0 0 / 0.03))
+    drop-shadow(0 3px 2px rgb(0 0 0 / 0.02));
+}
+
+.memoriesMid1ContentImg {
+  object-fit: cover;
+  overflow: hidden;
+  width: 90%;
+  height: 80%;
+  position: relative;
+  filter: drop-shadow(0 100px 80px rgba(0, 0, 0, 0.104))
+    drop-shadow(0 42px 33px rgba(0, 0, 0, 0.09))
+    drop-shadow(0 22px 18px rgba(0, 0, 0, 0.077))
+    drop-shadow(0 13px 10px rgba(0, 0, 0, 0.052))
+    drop-shadow(0 7px 5px rgba(0, 0, 0, 0.136))
+    drop-shadow(0 3px 2px rgba(0, 0, 0, 0.089));
+}
