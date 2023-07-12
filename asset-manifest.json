@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cherry_blossom/static/css/main.3fda4491.css",
+    "main.js": "/cherry_blossom/static/js/main.f9adb6e7.js",
+    "static/media/IMG-20230309-WA0004.jpg": "/cherry_blossom/static/media/IMG-20230309-WA0004.5871cf00137821d5a061.jpg",
+    "static/media/WhatsApp Image 2023-06-26 at 11.13.49.jpeg": "/cherry_blossom/static/media/WhatsApp Image 2023-06-26 at 11.13.49.6c738381399409785e5e.jpeg",
+    "static/media/Screenshot_20220819-121746_Gallery.jpg": "/cherry_blossom/static/media/Screenshot_20220819-121746_Gallery.274a081ac270b62c8665.jpg",
+    "index.html": "/cherry_blossom/index.html",
+    "main.3fda4491.css.map": "/cherry_blossom/static/css/main.3fda4491.css.map",
+    "main.f9adb6e7.js.map": "/cherry_blossom/static/js/main.f9adb6e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fda4491.css",
+    "static/js/main.f9adb6e7.js"
+  ]
+}
